@@ -316,20 +316,17 @@ img {
 <h1><span id="homecon">home工程需要修改的配置文件</span></h1>
 <h2>说明</h2>
 <h4>- 需要执行SQL：</h4>
-<blockquote>
-<p>comment on column hr_personnel_person.column1 is '微信号';</p>
-</blockquote>
-<p></br></br></p>
-<h4>1.proper-hr-personnel中设置conf.properties 中的</h4>
-<blockquote>
-<p>weixinHttpUrl=http://xxx.xxx.xxx.xxx/xxxx</p>
-</blockquote>
-<h4>其中xxx.xxx.xxx.xxx更换为现场用户微信端服务器的微信内网ip地址</h4>
-<p></br></br></p>
-<h4>2.uip-security项目中设置conf.properties 中的</h4>
-<blockquote>
-<p>weixinHttpUrl=http://xxx.xxx.xxx.xxx/xxxx</p>
-</blockquote>
+<pre><code> comment on column hr\_personnel_person.column1 is '微信号';
+</code></pre>
+
+<h3>*以上说明的情况是在整合home之前的情况，在整合后的home文件中，只有一个配置文件，路径为：</h3>
+<pre><code>apache-tomcat-7/webapps/home/WEB-INF/classes/conf.properties
+</code></pre>
+
+<h3>修改的配置配件内容与上面一致</h3>
+<pre><code> weixinHttpUrl=http://xxx.xxx.xxx.xxx/xxxx
+</code></pre>
+
 <h4>其中xxx.xxx.xxx.xxx更换为现场用户微信端服务器的微信内网ip地址</h4>
 <p></br></br><a href="#home">回到首页</a></p>
 <h1><span id="msgcon">messagemanagement工程需要修改的配置文件</span></h1>
