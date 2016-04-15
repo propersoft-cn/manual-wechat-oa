@@ -36,7 +36,7 @@
 	 comment on column hr\_personnel_person.column1 is '微信号';
 ###在整合后的home文件中，只有一个配置文件，路径为：
 	apache-tomcat-7/webapps/home/WEB-INF/classes/conf.properties
-###修改的配置配件内容与上面一致
+###修改的配置配件内容：
 	 weixinHttpUrl=http://xxx.xxx.xxx.xxx/xxxx
 ####其中xxx.xxx.xxx.xxx更换为现场用户微信端服务器的微信内网ip地址
 
