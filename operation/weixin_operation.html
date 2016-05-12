@@ -310,6 +310,7 @@ img {
 <h4>2.proxy_base_domain为域名</h4>
 <h4>3.weixin_corpid、weixin_corpsecret、weixin_token、weixin_encodingaeskey、weixin_agentid为微信工程重要的通信参数，获取这些参数需要管理员登录微信企业号管理平台，获取位置参照下图：</h4>
 <p><img src="./opics/weixincon1.png" /></p>
+<h4>PS:在设置Token和EncodingAESKey的时候可以使用随机生成的字符串，但是需要现场实施人员记录到微信工程的配置文件conf.properties中，此时点击保存时不会成功的，需要参考<a href="#weixinpj">4. 微信工程</a>中的回调模式验证才能够验证通过！！！</h4>
 <h4>4.weixin_department参数为部门ID，管理员可以在微信企业号管理平台的【通讯录】中【组织机构】中点击对应的机构即可看到对应的ID值。</h4>
 <h4>（注:因为目前没有将企业的内部组织结构放在微信企业号中进行维护，现在的处理方式是把所有的人员都放在一个组织机构中，以后如果要维护组织机构信息需要进行相应的开发）</h4>
 <p></br></br><a href="#home">回到首页</a></p>
