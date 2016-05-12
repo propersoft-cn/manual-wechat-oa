@@ -352,8 +352,8 @@ weixin_push_path = /xxxx</br>
 <h4>- 需要一个单独运行的80端口的tomcat</h4>
 <h4>- 启动tomcat后，需要在企业号应用中进行回调模式的验证</h4>
 <h4>- <font color="red">在企业微信号客户端，管理员输入&quot;createMenu&quot;创建菜单，如果收到&quot;创建菜单成功&quot;则表示创建菜单成功</font></h4>
-<h4>PS：回调模式的验证：需要管理员用户登录到微信企业号管理平台，然后点击【应用中心】-&gt;选择想要验证的应用-&gt;【回调模式】-&gt;【回调URL及密钥】修改 -&gt; 将配置文件中的回调URL及密钥填写到对应位置（注：回调URL为  http:// 域名 + /properweixinqyoa/weixincore/api） -&gt; 验证成功</h4>
-<p>在验证时需要做特殊处理，需要注意的一点：调用过程中可能会出现java.security.InvalidKeyException:illegal Key Size的异常</p>
+<h4>PS：<font color="red">需要特殊强调一下回调模式的验证：需要管理员用户登录到微信企业号管理平台，然后点击【应用中心】-&gt;选择想要验证的应用-&gt;【回调模式】-&gt;【回调URL及密钥】修改 -&gt; 将配置文件中的回调URL及密钥填写到对应位置（注：回调URL为  http:// 域名 + /properweixinqyoa/weixincore/api） -&gt; 验证成功</h4>
+<p>在验证时需要做特殊处理，需要注意的一点：调用过程中可能会出现java.security.InvalidKeyException:illegal Key Size的异常</p></font>
 <p>解决方法：</p>
 <p>在官方网站下载JCE无限制权限策略文件</p>
 <p>请到官网下载对应的版本。</p>
