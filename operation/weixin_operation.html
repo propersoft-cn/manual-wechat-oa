@@ -346,7 +346,7 @@ weixin_push_path = /xxxx</br>
 <font color="red">修改messagemanagement工程时需要注意以下几点，否则推送将不会成功：
 <h4>- 启动DDpush服务</h4>
 <h4>- home工程中(视为推送客户端)需要确认参数 proper_platform_rmi_port(Linux系统路径：tomcat/bin/catalina.sh   |   windows系统路径:tomcat/bin/catalina.bat)。此参数需要与messagemanagement工程(视为服务端)中的conf.properties中的参数platform.rmi.port一致(路径: messagemanagement/WEB-INF/classes)</h4>
-<h4>- home工程中(视为推送客户端)需要确认参数 proper_platform_rmi_host(Linux系统路径：tomcat/bin/catalina.sh   |   windows系统路径:tomcat/bin/catalina.bat)。此参数需要与mobile-platform工程(视为服务端)中的tomcat中的参数-Djava.rmi.server.hostname 以及 proper_platform_rmi_host一致，应该设置为mobile-platform工程所在服务器的IP地址(Linux系统路径：tomcat/bin/catalina.sh   |   windows系统路径:tomcat/bin/catalina.bat)</h4>
+<h4>- home工程中(视为推送客户端)需要确认参数 proper_platform_rmi_host(Linux系统路径：tomcat/bin/catalina.sh   |   windows系统路径:tomcat/bin/catalina.bat)。此参数需要与mobile-platform工程(视为服务端)中的tomcat中的参数-Djava.rmi.server.hostname 以及 proper_platform_rmi_host一致，应该设置为mobile-platform工程所在服务器的内网IP地址(Linux系统路径：tomcat/bin/catalina.sh   |   windows系统路径:tomcat/bin/catalina.bat)</h4>
 </font></h3>
 
 <p></br></br><a href="#home">回到首页</a></p>
