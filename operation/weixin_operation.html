@@ -304,7 +304,7 @@ img {
 <h1><span id="weixincon">微信工程需要修改的配置文件</span></h1>
 <h2>说明</h2>
 <h4>- 配置文件位置：</h4>
-<h4>- properweixinqyoa\WEB-INF\classes\conf.properties</h4>
+<h4>- ***weixinqyoa\WEB-INF\classes\conf.properties</h4>
 <p><img src="./opics/weixincon.png" /></p>
 <h4>1.proxy_base_url为APP服务端地址</h4>
 <h4>2.proxy_base_domain为域名</h4>
@@ -325,7 +325,7 @@ img {
 </code></pre>
 
 <h3>修改的配置配件内容：</h3>
-<pre><code> weixinHttpUrl=http://xxx.xxx.xxx.xxx/properweixinqyoa/weixincore
+<pre><code> weixinHttpUrl=http://xxx.xxx.xxx.xxx/***weixinqyoa/weixincore
 </code></pre>
 
 <h4>其中xxx.xxx.xxx.xxx更换为现场用户微信端服务器的微信内网ip地址</h4>
@@ -354,12 +354,12 @@ weixin_push_path = /xxxx</br>
 <h2>说明</h2>
 <h4>- 需要一个有公网IP和内网IP的机器</h4>
 <h4>- 需要有映射到该服务器公网IP的域名</h4>
-<h4>- 微信工程名为properweixinqyoa</h4>
+<h4>- 微信工程名为***weixinqyoa</h4>
 <h4>- JDK版本建议1.6</h4>
 <h4>- 需要一个单独运行的80端口的tomcat</h4>
 <h4>- 启动tomcat后，需要在企业号应用中进行回调模式的验证</h4>
 <h4>- <font color="red">在企业微信号客户端，管理员输入&quot;createMenu&quot;创建菜单，如果收到&quot;创建菜单成功&quot;则表示创建菜单成功</font></h4>
-<h4>PS：需要特殊强调一下回调模式的验证：需要管理员用户登录到微信企业号管理平台，然后点击【应用中心】-&gt;选择想要验证的应用-&gt;【回调模式】-&gt;【回调URL及密钥】修改 -&gt; 将配置文件中的回调URL及密钥填写到对应位置<font color="red">（注：回调URL为  http:// 域名 + /properweixinqyoa/weixincore/api）</font> -&gt; 验证成功</h4>
+<h4>PS：需要特殊强调一下回调模式的验证：需要管理员用户登录到微信企业号管理平台，然后点击【应用中心】-&gt;选择想要验证的应用-&gt;【回调模式】-&gt;【回调URL及密钥】修改 -&gt; 将配置文件中的回调URL及密钥填写到对应位置<font color="red">（注：回调URL为  http:// 域名 + /***weixinqyoa/weixincore/api）</font> -&gt; 验证成功</h4>
 <p>在验证时需要做特殊处理，需要注意的一点：调用过程中可能会出现java.security.InvalidKeyException:illegal Key Size的异常</p>
 <p>解决方法：</p>
 <p>在官方网站下载JCE无限制权限策略文件</p>
