@@ -336,7 +336,9 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 <li><p>xxxweixinqyoa微信客户端工程：微信客户端工程。（xxx是各个项目具体的微信客户端前缀）</p></li>
 <li><p>home工程：此工程与微信相关的主要功能是在WEB版OA系统进行人员信息维护时与微信企业号通讯录进行同步更新。</p></li>
 <li><p>messagemanagement工程：此工程主要功能为推送各种类型的消息给用户。</p></li>
-<li><p>mobile-platform工程：此工程为移动端服务工程。</p></li>
+<li><p>mobile-platform工程：此工程为移动端服务工程。（如果需要启用APP应用则需要部署到有公网IP的服务器中）</p></li>
+<li><p>如果是APP需要同样上线则需要另外的服务工程作为支持，分别为properPush工程和DDpush工程。</p></li>
+<li><p><font color="red">建议将微信工程单独放在一台服务器中，其他工程放在home的服务器中</font></p></li>
 </ul>
 
 <h3 id="toc_20">微信客户端实施参考步骤：</h3>
@@ -355,7 +357,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 
 <p>7.部署xxxweixinqyoa微信客户端工程，进行回调模式的验证。（如有疑问，请参照<a href="#attention">微信客户端部署注意事项</a>）</p>
 
-<p>8.部署home工程，部署messagemanagement工程，部署mobile-platform工程，启动DDpush服务。</p>
+<p>8.部署home工程，部署messagemanagement工程，部署mobile-platform工程。（注：如果需要APP应用则需要启动另外两个相关工程）</p>
 
 <p>9.<font color="red">管理员关注企业号,在企业微信号客户端，管理员输入&quot;createMenu&quot;创建菜单，如果收到&quot;创建菜单成功&quot;则表示创建菜单成功</font></p>
 
@@ -446,7 +448,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 
 <p><img src="./opics/weixincon.png" alt=""/></p>
 
-<h4 id="toc_42">1.proxy_base_url为APP服务端地址</h4>
+<h4 id="toc_42">1.proxy_base_url为mobile-platform的IP地址</h4>
 
 <h4 id="toc_43">2.proxy_base_domain为域名</h4>
 
